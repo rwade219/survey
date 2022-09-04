@@ -12,8 +12,8 @@
     <p> Please fill out this form with the required information.</p>
     <form>
 <fieldset>
-    
-    <label for="name">name:</label> 
+    <legend>Basic Information</legend>
+    <label for="name">Name:</label> 
     <input type="text" id="name" placeholder="enter your name" required/>
     <br>
     
@@ -45,8 +45,16 @@
     
     </fieldset>
     <fieldset>
-    <p> What electives do you be enrolled in this year (up to three options )</p>
-    <input type="checkbox" value="Ancient Runes" class="inline"/><label for="Ancient Runes"></label>Ancient runes</label>
+    <legend> What electives do you be enrolled in this year </legend>
+    <input type="checkbox" value="Ancient-Runes" name="electives"/><label for="Ancient Runes">Ancient runes</label><br>
+
+    <input type="checkbox" value="Arithmancy" name="electives"/><label for="Arithmancy">Arithmancy</label><br>
+
+    <input type="checkbox" value="comc" name="electives"/><label for="comc">Care of Magical creatures</label><br>
+
+    <input type="checkbox" value="muggle-studies" name="electives"/><label for="muggle-studies">Muggle Studies</label><br>
+
+    <input type="checkbox" value="divination" name="electives"/><label for="divination">Divination</label>
 
     </fieldset>
     </form>
