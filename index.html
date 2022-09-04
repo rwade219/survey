@@ -11,23 +11,23 @@
     <h1> Survey Form</h1>
     <p> Please fill out this form with the required information.</p>
 <fieldset>
-    <div>
-        <label>name: <input type="text" placeholder="enter your name" required/></label>
-    </div>
-    <div>
-        <label> Age: <input type="number" min="11" max="18" placeholder="age"></label>
-    </div>
-    <div>
-        <label>Year: </label> <select>
+    
+        <label for="name">name: <input type="text" id="name" placeholder="enter your name" required/></label><br>
+    
+    
+        <label for="age"> Age: <input type="number" id="age" min="11" max="18" placeholder="age"></label><br>
+    
+    
+        <label for="year">Year: </label> <select>
             <option value="">(select one)</option>
             <option value="3"> 3rd Year </option>
             <option value="4"> 4th Year</option>
             <option value="5"> 5th Year</option>
             <option value="6"> 6th Year</option>
             <option value="7"> 7th Year</option>
-        </select>
-    </div>    
-    <div>    
+        </select><br>
+       
+        
         <label>House:</label> <select>
             <option value="">(select one)</option>
             <option value="Gryffindor"> Gryffindor </option>
@@ -35,7 +35,13 @@
             <option value="Ravenclaw"> Ravenclaw</option>
             <option value="Hufflepuff"> Hufflepuff</option>
         </select>
-    </div>
+    
     </fieldset>
+    <fieldset>
+    <p> What electives do you be enrolled in this year (up to three options )</p>
+    <label><input type="checkbox" value="Ancient Runes" class="inline"/>Ancient runes</label>
+
+    </fieldset>
+    
 </body>
 </html>
