@@ -10,16 +10,22 @@
 <body>
     <h1> Survey Form</h1>
     <p> Please fill out this form with the required information.</p>
+    <form>
 <fieldset>
     
-        <label for="name">name: <input type="text" id="name" placeholder="enter your name" required/></label><br>
+    <label for="name">name:</label> 
+    <input type="text" id="name" placeholder="enter your name" required/>
+    <br>
     
     
-        <label for="age"> Age: <input type="number" id="age" min="11" max="18" placeholder="age"></label><br>
+    <label for="age"> Age: </label>
+    <input type="number" id="age" min="11" max="18" placeholder="age">
+    <br>
     
     
-        <label for="year">Year: </label> <select>
-            <option value="">(select one)</option>
+        <label for="year-select">Year: </label> 
+        <select name="year" id="year-select">
+            <option value="">--Please choose an option--</option>
             <option value="3"> 3rd Year </option>
             <option value="4"> 4th Year</option>
             <option value="5"> 5th Year</option>
@@ -28,8 +34,9 @@
         </select><br>
        
         
-        <label>House:</label> <select>
-            <option value="">(select one)</option>
+        <label for="house-name">House:</label> 
+        <select name="house" id="house-name">
+            <option value="">--Please choose an option--</option>
             <option value="Gryffindor"> Gryffindor </option>
             <option value="Slytherin"> Slytherin</option>
             <option value="Ravenclaw"> Ravenclaw</option>
@@ -39,9 +46,10 @@
     </fieldset>
     <fieldset>
     <p> What electives do you be enrolled in this year (up to three options )</p>
-    <label><input type="checkbox" value="Ancient Runes" class="inline"/>Ancient runes</label>
+    <input type="checkbox" value="Ancient Runes" class="inline"/><label for="Ancient Runes"></label>Ancient runes</label>
 
     </fieldset>
+    </form>
     
 </body>
 </html>
